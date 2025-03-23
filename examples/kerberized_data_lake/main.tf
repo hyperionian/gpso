@@ -45,7 +45,7 @@ module "service_accounts" {
 
 module "data_lake_buckets" {
   source     = "terraform-google-modules/cloud-storage/google"
-  version    = "~> 1.6"
+  version    = "~> 10.0.0"
   project_id = var.project
   location   = var.bucket_location_map[split("-", var.region)[0]]
 
@@ -220,10 +220,9 @@ resource "google_storage_bucket_object" "shutdown_scripts" {
 }
 
 
-
 module "kms" {
   source  = "terraform-google-modules/kms/google"
-  version = "~> 1.2"
+  version = "~> 4.0.0"
 
   project_id = var.project
   location   = split("-", var.region)[0]

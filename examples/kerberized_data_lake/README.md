@@ -49,13 +49,13 @@ terragrunt taint module.test_data_lake.google_dataproc_cluster.analytics_cluster
 | Name | Version |
 |------|---------|
 | terraform | >= 0.12.17 |
-| google | >= 3.38.0, < 3.41.0 |
+| google | >= 3.38.0, < 6.0.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| google | >= 3.38.0, < 3.41.0 |
+| google | >= 3.38.0, < 6.0.0. |
 | google-beta | n/a |
 | null | n/a |
 

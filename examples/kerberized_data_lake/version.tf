@@ -24,6 +24,6 @@ terraform {
     # TODO remove upper bound once the storage CFT module is patched
     # https://github.com/terraform-google-modules/terraform-google-cloud-storage/blob/master/versions.tf
 
-    google = ">= 3.38.0, < 3.41.0"
+    google = ">= 3.38.0, < 6.0.0"
   }
 }

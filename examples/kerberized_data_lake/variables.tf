@@ -51,17 +51,17 @@ variable "data_lake_super_admin" {
 
 variable "corp_kdc_realm" {
   description = "Kerberos realm to represent centralized kerberos identities"
-  default     = "FOO.COM"
+  default     = "RUN.COM"
 }
 
 variable "metastore_realm" {
   description = "Kerberos realm for hive metastore to use"
-  default     = "HIVE-METASTORE.FOO.COM"
+  default     = "HIVE-METASTORE.RUN.COM"
 }
 
 variable "analytics_realm" {
   description = "Kerberos realm for analytics clusters to use"
-  default     = "ANALYTICS.FOO.COM"
+  default     = "ANALYTICS.RUN.COM"
 }
 
 variable "kdc_cluster" {
@@ -88,7 +88,7 @@ variable "tenants" {
 variable "users" {
   description = "list of human kerberos principals to be created as unix users on each cluster"
   type        = list(string)
-  default     = ["user1", "user2"]
+  default     = ["run1", "run2"]
 }
 
 variable "bucket_location_map" {
