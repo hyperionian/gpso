@@ -45,6 +45,7 @@ htmlcov/
 
 # Terraform
 # See: https://github.com/github/gitignore/blob/master/Terraform.gitignore
+*.terraform.lock.hcl
 **/.terraform/*
 *.tfstate
 *.tfstate.*
